@@ -19,8 +19,13 @@ var emailList = ["a@mail", "b@mail", "c@mail", "d@mail", "e@mail"];
 
 for (i = 0; i < emailList.length; i++) {
     if (email == emailList[i]) {
-        var welcome = document.getElementById("welcome");
+        var welcome = document.getElementById("result");
         welcome.innerHTML = "Benvenuto: " + email;
+
+    } else {
+        var welcome = document.getElementById("result");
+        welcome.innerHTML = "Access denied ";
+
     }
 
 }
