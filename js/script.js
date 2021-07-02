@@ -16,18 +16,21 @@ var emailList = ["a@mail", "b@mail", "c@mail", "d@mail", "e@mail"];
 
 
 //matching
+var result = false;
 
 for (i = 0; i < emailList.length; i++) {
     if (email == emailList[i]) {
+        var result = true;
         var welcome = document.getElementById("result");
         welcome.innerHTML = "Benvenuto: " + email;
 
-    } else {
-        var welcome = document.getElementById("result");
-        welcome.innerHTML = "Access denied ";
-
     }
 
+}
+
+if (result == false) {
+    var welcome = document.getElementById("result");
+    welcome.innerHTML = "Acces denied ";
 }
 
 
