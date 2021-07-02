@@ -22,6 +22,7 @@ for (i = 0; i < emailList.length; i++) {
         var welcome = document.getElementById("welcome");
         welcome.innerHTML = "Benvenuto: " + email;
     }
+
 }
 
 
