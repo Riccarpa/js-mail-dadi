@@ -5,29 +5,31 @@ controlla che sia nella lista di chi può accedere,
 stampa un messaggio appropriato sull’esito del controllo.
 */
 
-// //email catch
+//email catch
 
-// var email = prompt("inserisci la tua e-mail");
-// var welcome = document.getElementById("result");
+var email = prompt("inserisci la tua e-mail");
+var welcome = document.getElementById("result");
 
-// //email list
+//email list
 
-// var emailList = ["a@mail", "b@mail", "c@mail", "d@mail", "e@mail"];
+var emailList = ["a@mail", "b@mail", "c@mail", "d@mail", "e@mail"];
 
 
-// //matching
-// var result = false;
+//matching
+var result = false;
 
-// for (i = 0; i < emailList.length; i++) {
-//     if (email == emailList[i]) {
-//         var result = true;
-//         welcome.innerHTML = "Benvenuto: " + email;
-//     }
-// }
+for (i = 0; i < emailList.length; i++) {
+    if (email == emailList[i]) {
+        var result = true;
 
-// if (result == false) {
-//     welcome.innerHTML = "Acces denied ";
-// }
+    }
+}
+
+if (result == false) {
+    welcome.innerHTML = "Acces denied ";
+} else {
+    welcome.innerHTML = "Benvenuto: " + email;
+};
 
 
 
@@ -39,28 +41,29 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto e stampare il risultato.
 */
 
-//var
-var winner = document.getElementById("winner");
+// //var
+// var winner = document.getElementById("winner");
 
 
 
-// numero cpu
-var cpuNumber = Math.floor(Math.random() * 6) + 1;
-console.log('numero cpu: ', cpuNumber);
+// // numero cpu
+// var cpuNumber = Math.floor(Math.random() * 6) + 1;
+// console.log('numero cpu: ', cpuNumber);
 
-// numero giocatore
-var playerNumber = Math.floor(Math.random() * 6) + 1;
-console.log('numero giocatore: ', playerNumber);
+// // numero giocatore
+// var playerNumber = Math.floor(Math.random() * 6) + 1;
+// console.log('numero giocatore: ', playerNumber);
 
-// stabilire vincitore
+// // stabilire vincitore
 
-if (playerNumber > cpuNumber) {
+// if (playerNumber > cpuNumber) {
+//     message = ('hai vinto');
 
-    winner.innerHTML = ('hai vinto');
-} else if (playerNumber < cpuNumber) {
+// } else if (playerNumber < cpuNumber) {
 
-    winner.innerHTML = ('hai perso');
-} else {
+//     message = ('hai perso');
+// } else {
 
-    winner.innerHTML = ('pareggio');
-}
+//     message = ('pareggio');
+// }
+// winner.innerHTML = message;
